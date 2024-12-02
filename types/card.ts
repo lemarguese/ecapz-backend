@@ -41,6 +41,10 @@ export interface ICardProcessReq {
   "signature": string
 }
 
-export interface ICardProcessRes {
-
+export interface ICardProcessRes extends Pick<ICardResponse, 'card'> {
+  payment_id: string,
+  success: boolean,
+  acs: {
+    url: string
+  }
 }
