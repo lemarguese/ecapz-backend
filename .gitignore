@@ -1,0 +1,11 @@
+#env
+
+.env
+.env.*
+
+#yarn
+.yarnrc.yml
+.yarn
+
+#libraray
+/node_modules
